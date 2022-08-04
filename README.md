@@ -74,9 +74,13 @@
 
 ![image](https://user-images.githubusercontent.com/109730490/182869318-3ffcb9e0-65a1-4c4f-b257-11bd4f00366b.png)
 
+## Projenin Ekran Görüntüleri
 
+![image](https://user-images.githubusercontent.com/109730490/182955815-4b2fd88e-6c7b-4110-bf44-59e6d2d85c33.png)
 
+- ironman'e tıklandığında
 
+![image](https://user-images.githubusercontent.com/109730490/182955914-d005da89-b61f-4e30-8169-77066bfe098b.png)
 
 ## Kaynaklar
 
