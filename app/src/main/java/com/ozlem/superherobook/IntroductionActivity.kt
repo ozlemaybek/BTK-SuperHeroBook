@@ -1,5 +1,6 @@
 package com.ozlem.superherobook
 
+import android.graphics.BitmapFactory
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 // MainActivity ve XML arasındaki senkronizasyonu sağlamak için:
@@ -16,8 +17,14 @@ class IntroductionActivity : AppCompatActivity() {
         val chooseHero = intent.getStringExtra( "SuperHeroName")
         textViewIntroID.text = chooseHero
 
+        val choosenHeroImage = intent.getIntExtra("SuperHeroImages",0)
+        val bitmap = BitmapFactory.decodeResource(applicationContext.resources , choosenHeroImage)
+        imageViewID.setImageBitmap(bitmap)
+
+        /*
         val choose_hero = SingletonClass.ChooseHero
         val chooseImage = SingletonClass.image
         imageView.setImageBitmap(chooseImage)
+         */
     }
 }

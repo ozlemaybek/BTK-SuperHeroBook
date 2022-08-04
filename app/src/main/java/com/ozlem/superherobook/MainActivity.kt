@@ -23,6 +23,7 @@ class MainActivity : AppCompatActivity() {
         superHeroNames.add("Aquaman")
         superHeroNames.add("Spiderman")
 
+        /*
         // Verimsiz Tanımlamalar:
         // Şuanda batman için Bitmap oluşturduk:
         var batmanBitmap = BitmapFactory.decodeResource(applicationContext.resources,R.drawable.batman)
@@ -37,7 +38,21 @@ class MainActivity : AppCompatActivity() {
         superHeroImages.add(ironmanBitmap)
         superHeroImages.add(aquamanBitmap)
         superHeroImages.add(spidermanBitmap)
+        */
 
+        // Verimli tanımlamalar:
+        val batmanDrawableId = R.drawable.batman
+        val supermanDrawableId = R.drawable.superman
+        val ironmanDrawableId = R.drawable.ironman
+        val aquamanDrawableId = R.drawable.aquaman
+        val spidermanDrawableId = R.drawable.spiderman
+
+        var superHeroDrawableList = ArrayList<Int>()
+        superHeroDrawableList.add(batmanDrawableId)
+        superHeroDrawableList.add(supermanDrawableId)
+        superHeroDrawableList.add(ironmanDrawableId)
+        superHeroDrawableList.add(aquamanDrawableId)
+        superHeroDrawableList.add(spidermanDrawableId)
 
         // Adapter'ı oluşturalım:
         // Önce recyclerView'umuzun nasıl görüneceğini söylememiz gerekiyor.
@@ -45,7 +60,7 @@ class MainActivity : AppCompatActivity() {
         val layoutManager = LinearLayoutManager(this)
         recyclerView.layoutManager = layoutManager
         // adapter'ı oluşturalım:
-        val adapter = RecyclerAdapter(superHeroNames , superHeroImages)
+        val adapter = RecyclerAdapter(superHeroNames , superHeroDrawableList)
         recyclerView.adapter = adapter
 
     }

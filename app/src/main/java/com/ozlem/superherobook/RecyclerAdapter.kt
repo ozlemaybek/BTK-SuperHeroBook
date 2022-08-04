@@ -8,7 +8,7 @@ import android.view.ViewGroup
 import androidx.recyclerview.widget.RecyclerView
 import kotlinx.android.synthetic.main.recycler_row.view.*
 
-class RecyclerAdapter (val superHeroList : ArrayList<String> , val HeroImages : ArrayList<Bitmap>) : RecyclerView.Adapter<RecyclerAdapter.SuperHeroVH>() {
+class RecyclerAdapter (val superHeroList : ArrayList<String> , val HeroImages : ArrayList<Int>) : RecyclerView.Adapter<RecyclerAdapter.SuperHeroVH>() {
     class SuperHeroVH(itemView: View) : RecyclerView.ViewHolder(itemView) {
 
     }
@@ -33,8 +33,11 @@ class RecyclerAdapter (val superHeroList : ArrayList<String> , val HeroImages : 
             // ilk parametre olarak context'i 2. parametre olarak gideceğimiz yeri istiyor:
             val intent = Intent(holder.itemView.context , IntroductionActivity::class.java)
             intent.putExtra("SuperHeroName" , superHeroList.get(position))
+            intent.putExtra("SuperHeroImages",HeroImages.get(position))
+            /* Verimsiz kısım:
             val singleton = SingletonClass.ChooseHero
             singleton.image = HeroImages.get(position)
+             */
             holder.itemView.context.startActivity(intent)
 
             // Şimdi görselleri yollayalım:
