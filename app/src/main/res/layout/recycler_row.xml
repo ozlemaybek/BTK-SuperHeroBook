@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <!--Bu dosyada recyclerView'umuzun bir satırını tasarlayacağız.-->
+    <!--Bu xml her bir recyclerView sırasında kullanılacak.-->
+
+    <!--width: match_parent -> genişlik tüm alana yayılsın.-->
+    <!--height: wrap_content -> yükseklik ise içindeki içerik kadar olsun.-->
+    <TextView
+        android:id="@+id/recyclerViewTextViewID"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:text="TEST"
+        android:textColor="#0934D1"
+        android:layout_margin="5dp">
+    </TextView>
+
+</LinearLayout>

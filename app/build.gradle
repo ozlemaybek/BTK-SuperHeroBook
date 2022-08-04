@@ -1,6 +1,9 @@
 plugins {
     id 'com.android.application'
     id 'org.jetbrains.kotlin.android'
+    // MainActivity ve XML arasındaki senkronizasyonu sağlamak için:
+    id 'kotlin-android-extensions'
+
 }
 
 android {
