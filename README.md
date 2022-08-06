@@ -1,4 +1,4 @@
-# SuperHeroBook
+# BTK-SuperHeroBook
 
 # Kotlin İle Android Mobil Uygulama Geliştirme Eğitimi Temel Seviye (BTK AKADEMİ) Notlarım
 
